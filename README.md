@@ -9,7 +9,8 @@ Chris Hernandez, Claudia Caceres, Joseph Gorfinkle, Wan-Fang Chou
 ## Tinder Trails admin
 
 username: tindertrails
-password: welcometotindertrails
+
+password: ist303tindertrails
 
 ## User Stories and requirements
 
