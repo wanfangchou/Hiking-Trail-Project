@@ -39,7 +39,7 @@ password: welcometotindertrails
     
     f)	Web server calls the Map API and displays the local trail 
     
-    g)	The web application then provides the user the ability to choose a trial or go back to the main page
+    g)	The web application then provides the user the ability to choose a trail or go back to the main page
     
  ALLOCATED TASKS PER MEMBER:
     
@@ -73,6 +73,15 @@ password: welcometotindertrails
 
 11.	As a Hiker I want to __find all trails__ so that I can see which trails are available (estimate of completion time: __1 day__)
 
+
+## Instructions to Edit the Files in Your Own Machine
+1. Clone the folders () and the files () on GitHub.
+
+2. Create Virtual Environment
+
+3. Install the software you need
+
+4. Run the server on your machine
 
 ## Stakeholders
 * Project Coordinator
