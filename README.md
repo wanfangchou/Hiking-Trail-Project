@@ -108,6 +108,6 @@ password: ist303tindertrails
 
 12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
 
-Milestone #1 Burn Chart included in repository
+Milestone #1 Burn Chart included in Issues Section
 
 
