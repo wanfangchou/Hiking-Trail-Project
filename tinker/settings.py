@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'tinkerdb',
         'USER': 'postgres',
-        'PASSWORD': 'ist303tindertrails',
+        'PASSWORD': 'laura723',
         'HOST': 'localhost',
         'PORT': '5432',
     }
