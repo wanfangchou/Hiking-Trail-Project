@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'filters.apps.FiltersConfig',
     'accounts.apps.AccountsConfig',
+    'testy.apps.TestyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -1,6 +1,9 @@
 from django.test import TestCase, Client
 from accounts.views import *
 
-c = Client()
-response = c.post('/login/', {'username':'BOY', 'password': '123'})
-response.status_code
+#class LoginTestCase(TestCase):
+
+#    def test_login(self):
+        # First, check for the default behavior
+#        response = self.client.get('login')
+#        self.assertRedirects(response, )
