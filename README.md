@@ -84,8 +84,9 @@ password: ist303tindertrails
     Joe:        Task 1a, 1b, 2f
 
   MEETINGS 2X / WEEK - SUNDAY 1PM and WEDNESDAY 9:45PM
-
   TEST ENVIRONMENT BEING DEVELOPED ALONGSIDE CODE
+  
+  MILESTONE 2 - USER STORIES
 
 3.	As a Hiker I want to __find an easy trail__ so that I can enjoy my hike (estimate of completion time: __4 days__)
 
@@ -104,6 +105,8 @@ password: ist303tindertrails
 10.	As a Hiker I want to __find trails by their length__ that I can Hike within my allotted time (estimate of completion time: __2 days__)
 
 11.	As a Hiker I want to __find all trails__ so that I can see which trails are available (estimate of completion time: __1 day__)
+
+12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
 
 ## Stakeholders
 * Project Coordinator
