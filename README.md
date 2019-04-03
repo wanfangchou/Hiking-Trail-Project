@@ -11,31 +11,31 @@ Chris Hernandez, Claudia Caceres, Joseph Gorfinkle, Wan-Fang Chou
 ## Instructions to Edit the Files in Your Own Machine
 1. Clone the folders and the files on GitHub.
 
-$ git clone https://github.com/wanfangchou/tindertrails-project.git
+    $ git clone https://github.com/wanfangchou/tindertrails-project.git
 
 2. Create Virtual Environment
 
-Install virtual environment:
+    Install virtual environment:
 
-$ pip3 install virtualenv
+    $ pip3 install virtualenv
 
-Create virtual environment named "myvenv":
+    Create virtual environment named "myvenv":
 
-$ virtualenv myvenv
-or
-$ virtualenv --python=python3 myvenv
+    $ virtualenv myvenv
+    or
+    $ virtualenv --python=python3 myvenv
 
-Activate the virtual environment:
+    Activate the virtual environment:
 
-$ source myvenv/bin/activate
+    $ source myvenv/bin/activate
 
 3. Install the packages you need
 
-(myvenv)$ pip install -r requirements.txt
+    (myvenv)$ pip install -r requirements.txt
 
 4. Run the server on your machine
 
-(myvenv)$ python manage.py runserver
+    (myvenv)$ python manage.py runserver
 
 ## Tinder Trails admin
 

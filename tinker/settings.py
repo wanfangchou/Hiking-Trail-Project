@@ -123,17 +123,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-<<<<<<< HEAD:tinker/settings.py
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'tinker/static/')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-=======
->>>>>>> parent of de7c325... Put all pictures to homepage:tindertrail/settings.py
 STATIC_URL = '/static/'
-
-
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass
