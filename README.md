@@ -108,12 +108,6 @@ password: ist303tindertrails
 
 12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
 
-## Stakeholders
-* Project Coordinator
-* GitHub Owner
-* GUI Front End Design
-* GUI Front End Development
-* D/B Back End Development
-* Google Map API -- GPS
-* App Test Manager
-* End-users, i.e., hikers
+Milestone #1 Burn Chart included in repository
+
+
