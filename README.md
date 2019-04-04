@@ -108,8 +108,9 @@ password: ist303tindertrails
 
 12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
 
-Milestone #1 Burn_Down Chart
+Milestone #1 Burn_Down Chart and .PPT
 url: https://github.com/wanfangchou/tindertrails-project/blob/master/Burn_Chart_4_3_2019.PNG
+url: https://github.com/wanfangchou/tindertrails-project/blob/master/Hiking%20Trail%20App%20Milestone1.pptx
 
 
 
