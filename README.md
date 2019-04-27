@@ -107,6 +107,18 @@ password: ist303tindertrails
 11.	As a Hiker I want to __find all trails__ so that I can see which trails are available (estimate of completion time: __1 day__)
 
 12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
+    TASKS
+    a) Click on add a trail
+    b) If users logged in proceed, else display log in page
+    c) Search for file upload Dialog box displayed (diaply "note only .gpx files are supported")
+    d) Users selects file and then uploads it 
+    e) File type is checked for .gpx, returns error if not .gpx, return back to file upload
+    f) File is stored in Django
+    g) Django calls ArcGis and opens a connection
+    h) Django passes file to ArcGIS
+    i) ArcGIS stores the file as a record
+    j) ArcGIS display the trail, no metadata support required
+    
 
 Milestone #1 Burn_Down Chart and .PPT
 url: https://github.com/wanfangchou/tindertrails-project/blob/master/Burn_Chart_4_3_2019.PNG
