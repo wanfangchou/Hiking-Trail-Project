@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib import auth
+from django.contrib.auth.decorators import login_required
 
 def signup(request):
     while True:
@@ -39,3 +40,7 @@ def logout(request):
     if request.method == 'POST':
         auth.logout(request)
         return redirect('home')
+
+@login_required
+def addatrail(request):
+    return render(request, 'accounts/addatrail.html')
