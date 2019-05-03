@@ -44,8 +44,10 @@ def logout(request):
 
 @login_required
 def addatrail(request):
+    context = {}
     if request.method == 'POST':
         upload_file = request.FILES['document']
         fs = FileSystemStorage()
-        fs.save(upload_file.name, upload_file)
-    return render(request, 'accounts/addatrail.html')
+        name = fs.save(upload_file.name, upload_file)
+        context['url'] = fs.url(name)
+    return render(request, 'accounts/addatrail.html', context)
