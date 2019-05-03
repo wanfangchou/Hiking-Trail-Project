@@ -4,4 +4,12 @@
 
   <p> I'd like to add a trail! </p>
 
+  <h2>Upload</h2>
+  <br/>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="document">
+    <button type="submit">Upload File</button>
+  </form>
+
 {% endblock %}
