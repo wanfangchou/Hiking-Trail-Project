@@ -12,9 +12,9 @@
 
 <form method="POST" action="{% url 'signup' %}">
 {% csrf_token %}
-Username:
+Username (email):
 <br />
-<input type="text" name="username" required />
+<input type="email" name="username" required />
 <br />
 Password:
 <br />

@@ -51,3 +51,9 @@ def addatrail(request):
         name = fs.save(upload_file.name, upload_file)
         context['url'] = fs.url(name)
     return render(request, 'accounts/addatrail.html', context)
+
+#def password_reset(request):
+#    return render (request, 'accounts/password_reset.html')
+
+#def password_reset_done(request):
+#    return render (request, 'accounts/password_reset_done.html')

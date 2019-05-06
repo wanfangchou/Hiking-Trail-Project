@@ -2,9 +2,17 @@
 
 {% block content %}
 
-  <p> I'd like to add a trail! </p>
+  <h2>📍 Add a trail on the webpage 📍</h2>
+  <p>If you have most of the information about the new trail. You can click the button below and add a new trail.</p>
+  <p>Required Information: trail name, hours of operation, difficulty (easy, moderate, difficult)</p>
+  <p>Optional Information: biking, ADA access/kids friendly, pet access, etc</p>
+  <input class="btn btn-primary" type="submit" value="Go to Webpage!">
+<br />
+<br />
+<br />
 
-  <h2>Upload</h2>
+
+  <h2>📄 Upload a file 📄</h2>
   <br/>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
