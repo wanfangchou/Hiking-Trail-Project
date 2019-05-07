@@ -1,6 +1,6 @@
 # Tinder Trails
 
-url: http://165.22.132.51
+url: 
 
 ## Concept
 We would like to create a Hiking Trail App for hikers. The users can login or visit as a guest to our web server and filter their preference about trails such as the level of the trails, the proximity, and hiking equipment, etc. Then, we'll provide the best trails for user according to their decisions.
