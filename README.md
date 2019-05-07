@@ -11,31 +11,37 @@ Chris Hernandez, Claudia Caceres, Joseph Gorfinkle, Wan-Fang Chou
 ## Instructions to Edit the Files in Your Own Machine
 1. Clone the folders and the files on GitHub.
 
-    $ git clone https://github.com/wanfangchou/tindertrails-project.git
+    `$ git clone https://github.com/wanfangchou/tindertrails-project.git`
 
 2. Create Virtual Environment
 
     Install virtual environment:
 
-    $ pip3 install virtualenv
+    `$ pip3 install virtualenv`
 
     Create virtual environment named "myvenv":
 
-    $ virtualenv myvenv
+    `$ virtualenv myvenv`
     or
-    $ virtualenv --python=python3 myvenv
+    `$ virtualenv --python=python3 myvenv`
 
     Activate the virtual environment:
 
-    $ source myvenv/bin/activate
+    `$ source myvenv/bin/activate`
 
 3. Install the packages you need
 
-    (myvenv)$ pip install -r requirements.txt
+    `(myvenv)$ pip install -r requirements.txt`
 
 4. Run the server on your machine
 
-    (myvenv)$ python manage.py runserver
+    `(myvenv)$ python manage.py runserver`
+
+    The website can be accessed at `127.0.0.1:8000`
+
+## Running Tests
+
+Activate your virtualenv as shown above and type `pytest` to run tests.
 
 ## Tinder Trails admin
 
@@ -85,7 +91,7 @@ password: ist303tindertrails
 
   MEETINGS 2X / WEEK - SUNDAY 1PM and WEDNESDAY 9:45PM
   TEST ENVIRONMENT BEING DEVELOPED ALONGSIDE CODE
-  
+
   MILESTONE 2 - USER STORIES
 
 3.	As a Hiker I want to __find an easy trail__ so that I can enjoy my hike (estimate of completion time: __4 days__)
@@ -111,18 +117,15 @@ password: ist303tindertrails
     a) Click on add a trail
     b) If users logged in proceed, else display log in page
     c) Search for file upload Dialog box displayed (diaply "note only .gpx files are supported")
-    d) Users selects file and then uploads it 
+    d) Users selects file and then uploads it
     e) File type is checked for .gpx, returns error if not .gpx, return back to file upload
     f) File is stored in Django
     g) Django calls ArcGis and opens a connection
     h) Django passes file to ArcGIS
     i) ArcGIS stores the file as a record
     j) ArcGIS display the trail, no metadata support required
-    
+
 
 Milestone #1 Burn_Down Chart and .PPT
 url: https://github.com/wanfangchou/tindertrails-project/blob/master/Burn_Chart_4_3_2019.PNG
 url: https://github.com/wanfangchou/tindertrails-project/blob/master/Hiking%20Trail%20App%20Milestone1.pptx
-
-
-
