@@ -1,6 +1,6 @@
 # Tinder Trails
 
-url:
+
 
 ## Concept
 We would like to create a Hiking Trail App for hikers. The users can login or visit as a guest to our web server and filter their preference about trails such as the level of the trails, the proximity, and hiking equipment, etc. Then, we'll provide the best trails for user according to their decisions.
@@ -37,7 +37,7 @@ Chris Hernandez, Claudia Caceres, Joseph Gorfinkle, Wan-Fang Chou
 
     `(myvenv)$ python manage.py runserver`
 
-    The website can be accessed at `127.0.0.1:8000`
+    The website can be accessed at `http://127.0.0.1:8000`
 
 ## Running Tests
 
@@ -116,16 +116,24 @@ password: ist303tindertrails
 
 12. As a Hiker I want to __add a trail__ so that I can give other user's the ability to find trails I enjoy.
     TASKS
-    a) Click on add a trail
-    b) If users logged in proceed, else display log in page
-    c) Search for file upload Dialog box displayed (diaply "note only .gpx files are supported")
-    d) Users selects file and then uploads it
-    e) File type is checked for .gpx, returns error if not .gpx, return back to file upload
-    f) File is stored in Django
-    g) Django calls ArcGis and opens a connection
-    h) Django passes file to ArcGIS
-    i) ArcGIS stores the file as a record
-    j) ArcGIS display the trail, no metadata support required
+
+    a) Only the users who logged in could see the add a trail button
+
+    b) Users could have two choices for adding a trail
+
+    c) 1. Add the trail on the website directly
+
+    d) Users could click the button to connect to Tinder Trails of ArcGIS app section
+
+    e) Let users add a trail directly on the map
+
+    f) 2. Upload a file and we will help users add a trail on the map
+
+    g) File types users could upload: shapefile, .csv, .gpx, .xml, GeoJSON
+
+    h) File is stored in Django
+
+    g) We could check the uploaded file and use the information inside to add a trail on our ArcGIS server
 
 
 Milestone #1 Burn_Down Chart and .PPT

@@ -2,21 +2,24 @@
 
 {% block content %}
 
-  <h2>📍 Add a trail on the webpage 📍</h2>
-  <p>If you have most of the information about the new trail. You can click the button below and add a new trail.</p>
-  <p>Required Information: accurate route, trail name, operation, difficulty (easy, moderate, difficult)</p>
-  <p>Optional Information: ADA accessible, kids friendly, pet accessible, restrooms, drinking water, etc</p>
+  <h3>📍 Add a trail on the webpage 📍</h3>
+  <p>If you have most of the information about the new trail, you could click the button below and add a new trail.</p>
+  <p>Required Information: accurate route, trail name, hours of operation, difficulty (easy, moderate, difficult)</p>
+  <p>Optional Information: ADA accessible, kids friendly, pet accessible, restrooms, drinking water, parking, biking, WiFi, etc.</p>
   <a href="http://134.173.236.176/tinderedit/index.html">
-    <input class="btn btn-primary" type="submit" value="Go to Webpage!" >
+    <input class="btn btn-primary" type="submit" value="Go to Webpage" >
   </a>
 
 <br />
 <br />
 <br />
+<br />
+<br />
 
 
-  <h2>📄 Upload a file 📄</h2>
+  <h3>📄 Upload a file 📄</h3>
   <br/>
+  <p> Or you can upload a file and we will help you add a new trail.</p>
   <p> Please upload one of these file types: Shapefile, CSV, KML, GPX, or GeoJSON</p>
   <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
