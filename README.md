@@ -1,6 +1,6 @@
 # Tinder Trails
 
-url: 
+url:
 
 ## Concept
 We would like to create a Hiking Trail App for hikers. The users can login or visit as a guest to our web server and filter their preference about trails such as the level of the trails, the proximity, and hiking equipment, etc. Then, we'll provide the best trails for user according to their decisions.
@@ -98,17 +98,19 @@ password: ist303tindertrails
 
 4.	As a Hiker I want to __find a challenging trail__ so that I can start my hike (estimate of completion time: __3 days__)
 
-5.	As a Hiker I want to __find my hiking equipment__ so that I can replace my equipment (estimate of completion time: __3 days__)
+5.	As a Hiker I want to __know the elevation profile of a trail__ so that I can be prepared before I go hiking (estimate of completion time: __3 days__)
 
 6.	As a Hiker I want to __find dog/kids friendly trails__ so that I can hike with my dog/kids (estimate of completion time: __3 days__)
 
-7.	As a Hiker I want to __view the times/hours of a trail__ so that I can hike when the trail is available (estimate of completion time: __2 days__)
+6.5	As a Hiker I want to __find ADA accessible trails__ so that I can hike with disabled fellows (estimate of completion time: __2 days__)
+
+7.	As a Hiker I want to __view operation of a trail__ so that I can hike when the trail is available (estimate of completion time: __2 days__)
 
 8. As a Hiker I want to __find trails with wildlife__ so that I can view wildlife while I hike (estimate of completion time: __2 days__)
 
 9.	As a Hiker I want to __find trails with restrooms__ so that I can use it before I hike (estimate of completion time: __2 day__)
 
-10.	As a Hiker I want to __find trails by their length__ that I can Hike within my allotted time (estimate of completion time: __2 days__)
+10.	As a Hiker I want to __know the length of a trail__ so that I can hike within my allotted time (estimate of completion time: __2 days__)
 
 11.	As a Hiker I want to __find all trails__ so that I can see which trails are available (estimate of completion time: __1 day__)
 

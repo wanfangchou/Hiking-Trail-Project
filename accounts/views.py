@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib import auth
 from django.contrib.auth.decorators import login_required
 from django.core.files.storage import FileSystemStorage
+#from upload_validator import FileTypeValidator
 
 def signup(request):
     while True:
@@ -50,4 +51,6 @@ def addatrail(request):
         fs = FileSystemStorage()
         name = fs.save(upload_file.name, upload_file)
         context['url'] = fs.url(name)
+#        validator = FileTypeValidator(
+#    allowed_extensions=['.shp', '.csv', '.kml', '.json'])
     return render(request, 'accounts/addatrail.html', context)
