@@ -6,25 +6,25 @@ from django.core.files.storage import FileSystemStorage
 
 def signup(request):
     while True:
-        try:
-            if request.method == 'POST':
-                # User has info and wants an account now!
-                if request.POST['password1'] == request.POST['password2']:
-                    try:
-                        user = User.objects.get(username=request.POST['username'])
-                        return render(request, 'accounts/signup.html', {'error':'Username has already been taken'})
-                    except User.DoesNotExist:
-                        user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
-                        auth.login(request,user)
-                        return redirect('home')
-                else:
-                    return render(request, 'accounts/signup.html', {'error':'Passwords must match'})
+        #try:
+        if request.method == 'POST':
+            # User has info and wants an account now!
+            if request.POST['password1'] == request.POST['password2']:
+                try:
+                    user = User.objects.get(username=request.POST['username'])
+                    return render(request, 'accounts/signup.html', {'error':'Username has already been taken'})
+                except User.DoesNotExist:
+                    user = User.objects.create_user(request.POST['username'], password=request.POST['password1'])
+                    auth.login(request,user)
+                    return redirect('home')
             else:
-                # User wants to enter info
-                return render(request, 'accounts/signup.html')
+                return render(request, 'accounts/signup.html', {'error':'Passwords must match'})
+        else:
+            # User wants to enter info
+            return render(request, 'accounts/signup.html')
 
-        except ValueError:
-            return render(request, 'accounts/signup.html', {'error': 'You have to fill in your username and/or password'})
+        #except ValueError:
+            #return render(request, 'accounts/signup.html', {'error': 'You have to fill in your username and/or password'})
 
 def login(request):
     if request.method == 'POST':
@@ -51,9 +51,3 @@ def addatrail(request):
         name = fs.save(upload_file.name, upload_file)
         context['url'] = fs.url(name)
     return render(request, 'accounts/addatrail.html', context)
-
-#def password_reset(request):
-#    return render (request, 'accounts/password_reset.html')
-
-#def password_reset_done(request):
-#    return render (request, 'accounts/password_reset_done.html')

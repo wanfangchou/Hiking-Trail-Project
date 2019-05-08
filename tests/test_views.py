@@ -1,4 +1,4 @@
-import datetime as dt
+import datetime
 
 from django import urls
 from accounts import views
@@ -18,7 +18,7 @@ import pytest
 @pytest.mark.parametrize('name', ['signup', 'login'])
 def test_public_views(name, client):
     """
-    Verify that the registration and login views are public
+    Verify that the sign up and login views are public
     """
     url = urls.reverse(name)
     resp = client.get(url)
@@ -59,8 +59,9 @@ def test_addatrail_site(client):
     assert resp.status_code == 302
     assert b'Add a trail on the webpage'
 
-@freeze_time('2019-05-07 19:00:00')
 @pytest.mark.django_db
+#@pytest.mark.freeze_time('2019-05-06')
+
 def test_signup(client):
     """
     Signup a user and verifies their last login date is correct
@@ -78,7 +79,9 @@ def test_signup(client):
 
     # There should be a user with 'hello@example.com'
     user = User.objects.get(username='hello@example.com')
-#    assert user.last_login == dt.datetime(2019, 5, 7, 19, 0)
+
+    assert datetime.datetime.date(user.last_login) == datetime.datetime.now().date()
+    #assert datetime.datetime.now().date() == datetime.date(2019,5,6)
 
 @pytest.mark.django_db
 def test_login_and_logout(client):
@@ -124,7 +127,7 @@ def test_signup_blank(client):
         'password1': None,
         'password2': None,
     })
-#    with pytest.raises(ValueError)
+#    with pytest.raises(ValueError):
     assert urls.reverse('signup')
     assert b'You have to fill in your username and/or password'
 
