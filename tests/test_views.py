@@ -12,9 +12,6 @@ from django_dynamic_fixture import G
 from freezegun import freeze_time
 import pytest
 
-
-#class TestViews:
-
 @pytest.mark.parametrize('name', ['signup', 'login'])
 def test_public_views(name, client):
     """
@@ -31,6 +28,8 @@ def test_signup_authenticated(client):
     path = reverse('home')
     with pytest.raises(Exception):
         assert 'home' in redirect.url
+
+
 
 def test_signup_site(client):
     """
@@ -59,12 +58,14 @@ def test_addatrail_site(client):
     assert resp.status_code == 302
     assert b'Add a trail on the webpage'
 
+
+
 @pytest.mark.django_db
 #@pytest.mark.freeze_time('2019-05-06')
 
 def test_signup(client):
     """
-    Signup a user and verifies their last login date is correct
+    Signup a user and verify the last login date is correct
     """
     signup_url = urls.reverse('signup')
     resp = client.post(signup_url, {
@@ -83,10 +84,11 @@ def test_signup(client):
     assert datetime.datetime.date(user.last_login) == datetime.datetime.now().date()
     #assert datetime.datetime.now().date() == datetime.date(2019,5,6)
 
+
 @pytest.mark.django_db
 def test_login_and_logout(client):
     """
-    Tests logging in and logging out
+    Test logging in and logging out
     """
     # Create a fake user
     user = G(User, username='username@example')
@@ -112,14 +114,12 @@ def test_login_and_logout(client):
 
     assert resp.status_code == 200
 
-    # After logout, there should be no more sessions left
-#    assert not Session.objects.exist()
 
 
 @pytest.mark.django_db
 def test_signup_blank(client):
     """
-    Tests if the username and passwords are blank
+    Test if the username and passwords are blank
     """
     signup_url = urls.reverse('signup')
     resp = client.post(signup_url, {

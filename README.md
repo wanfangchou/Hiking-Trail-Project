@@ -1,7 +1,5 @@
 # Tinder Trails
 
-
-
 ## Concept
 We would like to create a Hiking Trail App for hikers. The users can login or visit as a guest to our web server and filter their preference about trails such as the level of the trails, the proximity, and hiking equipment, etc. Then, we'll provide the best trails for user according to their decisions.
 
@@ -43,13 +41,13 @@ Chris Hernandez, Claudia Caceres, Joseph Gorfinkle, Wan-Fang Chou
 
 Activate your virtualenv as shown above and type `pytest` to run tests.
 
-## Tinder Trails admin
+## Tinder Trails Admin
 
-username: tindertrails
+username: tinkers
 
-password: ist303tindertrails
+password: ist303
 
-## User Stories and requirements
+## User Stories and Requirements
 
 1.  As a user I want to __log in__ so that I can save my records or favorite trails. (estimate of completion time: __4 days__)
 
@@ -135,6 +133,13 @@ password: ist303tindertrails
 
     g) We could check the uploaded file and use the information inside to add a trail on our ArcGIS server
 
+## The Three Most Important Things We Learned about Software Development in Our Project
+
+1. Software development brings us to new heights of integration. In this project, we used software development to create our own website which with multiple functionalities. Also, we integrated django to GIS server to make our idea happen.
+
+2. Software development helps us reduce complexity. When we had the idea in the beginning, we were afraid that whether we can fulfill it or not. However, because of software development, we utilized it in our project to let us complete the project step by step. It reduced the complexity for us so that we could move forward to achieve our goal.
+
+3. Software development helps us handle a big project. It is impossible to make a big perfect project in a few days. The project required lots of planning, patience, maintenance, and testing. From this project, we figured out the importance of testing our codes and learned that testing is so important in software development that it could not only make our project reliable but also save our time.
 
 Milestone #1 Burn_Down Chart and .PPT
 url: https://github.com/wanfangchou/tindertrails-project/blob/master/Burn_Chart_4_3_2019.PNG
